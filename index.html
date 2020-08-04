@@ -2,25 +2,126 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>torsami77 -- Samuel, Tor Samson</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      #navbar {
+          top: 0; 
+          position: fixed;
+          z-index: 99;
+      }
+
+      @media only screen and (max-width: 600px) {
+        #welcome-section h1 {
+          font-size: 25px;
+        }
+      }
+    </style>
   </head>
-
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <nav id="navbar">
+      <div class="logo">
+        <h1><a href="index.html">@torsami77</a></h1>
+      </div>
+      <div id="hamberger">
+        <img width="40px" height="40px" src="images/menu.png" onclick="toggleMenu();" />
+      </div>
+      <div id="nav-links" class="nav navbar-nav">
+          <li><a href="#welcome-section">About</a></li>
+          <li><a href="#projects">Works</a></li>
+          <li><a href="https://medium.com/@torsami77" target="_blank">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </div>
+    </nav>
+<!--
+<canvas id="c" style="positon: fixed; top: 0; ">
+</canvas>
+-->
 
-    <!--
+<canvas id="c" style="min-height: 100vh; width: 100%; position: fixed; z-index:-99;">
+</canvas>
 
-    Hello Camper!
+    <div id="welcome-section">
+      <div class="pro-pic-holder" style="background-image: url('images/profile-picture.png');">
+      </div>
+      <div>
+          <h1 class="name">Samuel, Tor Samson</h1>
+          <h1 class="title"><strong>Software Developer</strong></h1>
+      </div>
+    </div>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+    <div id="projects">
+      <div class="project">
+        <div class="project-screenshot" style="background-image: url('images/dbullssquad.png');">
+        </div>
+        <div class="project-title">
+          <p><strong>Stacks:</strong> HTML5, CSS3, Bootstrap4, ES6, Node.js, Sequelize.js, PostgreSQL, Mocha, TravisCI, HerokuCD </p>
+          <a href="https://www.dbullsquad-frontend.herokuapp.com" target="__blank">Live</a>
+        </div>
+      </div>
 
-    - The freeCodeCamp Team
+      <div class="project">
+        <div class="project-screenshot" style="background-image: url('images/stackoverflowlite.png');">
+        </div>
+        <div class="project-title">
+          <p><strong>Stacks:</strong> HTML5, CSS3, ES6, Node.js, SQL, PostgreSQL, Mocha, TravisCI, CoverallsCI, HerokuCD </p>
+          <a href="https://www.dbullsquad.com" target="__blank">Live</a>
+        </div>
+      </div>
 
-    -->
+      <div class="project">
+        <div class="project-screenshot" style="background-image: url('images/codefoodie.png');">
+        </div>
+        <div class="project-title">
+          <p><strong>Stacks:</strong> HTML5, CSS3, BootStrap4, Material.IO </p>
+          <br/>
+          <a href="https://www.codefoodie.xyz" target="__blank">Live</a>
+        </div>
+      </div>
+
+      <div class="project">
+          <div class="project-screenshot" style="background-image: url('images/automart.png');">
+          </div>
+          <div class="project-title">
+            <p><strong>Stacks:</strong> Swagger-Docs, ES6, Node.js, SQL, PostgreSQL, Mocha, TravisCI, CoverallsCI, HerokuCD </p>
+            <a href="https://www.automart77.herokuapp.com/api-docs/" target="__blank">Live</a>
+          </div>
+        </div>
+  
+        <div class="project">
+          <div class="project-screenshot" style="background-image: url('images/gts.png');">
+          </div>
+          <div class="project-title">
+              <p><strong>Stacks:</strong> HTML5, CSS3, BootStrap4 </p>
+              <br/><p></p>
+            <a href="https://gtsportal.herokuapp.com/" target="__blank">Live</a>
+          </div>
+        </div>
+  
+        <div class="project">
+          <div class="project-screenshot" style="background-image: url('images/barefoot.png');">
+          </div>
+          <div class="project-title">
+            <p><strong>Stacks:</strong> Figma, ES6, Node.js, React.js, Sequelize, PostgreSQL, Mocha, TravisCI, CodeClimateCI, HerokuCD </p>
+            <a href="https://barefootnomad10-staging.herokuapp.com" target="__blank">Live</a>
+          </div>
+        </div>
+    </div>
+
+    <div id="contact">
+      <div class=contact>
+        <a href="https://www.github.com/torsami77" id="profile-link" target="_blank"><i class='fab fa-github'> Github</i></a>
+        <a href="https://www.linkedin.com/in/torsami77" id="linkedin-link" target="_blank"><i class='fab fa-linkedin'> Linkedin</i></a>
+        <a href="https://www.twitter.com/torsami77" id="twitter-link" target="_blank"><i class='fab fa-twitter'> Twitter</i></a>
+        <a href="mailto:torsami77@gmal.com" id="gmail-link"><i class='fa fa-envelope'> Gmail</i></a>
+      </div>
+      <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script></p>
+    </div>
+    <script src="./js/matrix.js" type="text/javascript">
+    </script>
     <script  src="js/index.js"></script>
   </body>
 </html>
