@@ -65,7 +65,7 @@ a {
 
 #welcome-section {
     margin-top: 10vh;
-    height: 70vh;
+    min-height: 100vh;
     padding: 15vh;
     color: indigo;
     display: flex;
@@ -82,6 +82,15 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.auto-type {
+    width: 40vw;
+    min-height: 100px;
+    padding: 20px 20px;
+    border: 10px solid indigo;
+    border-radius: 25px;
+    background-color: white;
 }
 
 #hamberger {
